@@ -17,7 +17,7 @@ permalink: /about/
       </tr> -->
       <tr class="normal-row">
         <td class="property">Neutrality</td>
-        <td class="reason">Distill provides a neutral platform for multiple authors to jointly publish. This is in contrast to a personal website, where outside contributors may get less credit.</td>
+        <td class="reason">geoRxiv provides a neutral platform for multiple authors to jointly publish. This is in contrast to a personal website, where outside contributors may get less credit.</td>
       </tr>
       <tr class="normal-row">
         <td class="property">Impact</td>
