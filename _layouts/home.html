@@ -1,41 +1,44 @@
 ---
 layout: default
 ---
+<style>
+  .hack a {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  color: inherit;
+}
 
-<div class="home">
+ .hack a:hover {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+ .link {
+  text-decoration: underline;
+  cursor: pointer;
+}
+</style>
+
+
+<div class="posts-list l-page hack">
 
   {{ content }}
 
-  <h1 class="page-heading">Posts</h1>
-  
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
+  <h1 class="post-tag">Latest Articles</h1>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <h1 class="page-heading">Latest Articles</h1>
-  <hr>
-
-  <ul class="post-list">
     {% for post in site.articles %}
-      <li>
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
+    {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+    <a href="{{ post.url | relative_url }}" class="post-preview">
+      <div class="metadata">
+        <div>{{ post.date | date: date_format }}</div>
+      </div>
+      <div class="thumbnail"><img src="{{ post.thumbnail }}"></div>
+      <div class="description">
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.subtitle }}</p>
+      </div>
+    </a>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
     {% endfor %}
-  </ul>
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
 
