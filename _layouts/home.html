@@ -28,7 +28,7 @@ layout: default
     {% for post in site.articles %}
     <a href="{{ post.url | relative_url }}" class="post-preview">
       <div class="metadata">
-        <div>{{ post.date | date_to_string}}</div>
+        <div>{{ post.date | date: "%-d %b %Y" }}</div>
       </div>
       <div class="thumbnail"><img src="{{ post.thumbnail }}"></div>
       <div class="description">
