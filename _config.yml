@@ -23,7 +23,6 @@ github_username:  georxiv
 
 # Build settings
 markdown: kramdown
-highlighter: rouge
 theme: minima
 plugins:
   - jekyll-feed
@@ -74,4 +73,5 @@ defaults:
       layout: articles
       permalink: /:journal/:title/
       distill: true
+      katex: true
 

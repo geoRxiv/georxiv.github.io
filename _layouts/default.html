@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-  {% include head.html %}
-
+    {% include head.html %}
+    {% if page.katex %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+    {% endif %}
   <body>
 
     {% include header.html %}
 
-    <main class="page-content" aria-label="Content">
+      <main class="page-content" aria-label="Content">
       <div class="wrapper">
         {{ content }}
       </div>
@@ -16,9 +18,6 @@
     {% include footer.html %}
 
 
-    {% if distill %}
-    <script src="http://distill.pub/template.v1.js"></script>
-    {% endif %}
   </body>
 
 </html>
