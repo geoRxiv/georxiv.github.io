@@ -35,7 +35,7 @@ authors:
 <dt-code block language="python">
 def myfunc(i, x):
     "This function does something cool."
-    return i **x
+    return i ** x
 </dt-code>
 To try that out, create a new file called it `<your_submission_title>.html`, the name doesn't matter much, however, the extension should be `*.html`. And copy paste this to it.
 
