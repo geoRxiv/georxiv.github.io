@@ -4,9 +4,6 @@ title: Why geoRxiv
 xetex: true
 ---
 <style>
- h1{
-     margin-top: 17px;
- }
  dt-article dt-byline a:visited, a:visited{
      color: inherit !important;
  }
@@ -15,25 +12,28 @@ xetex: true
      outline: none !important;
      text-decoration: none !important;
  }
-
 </style>
 
+{% capture metadata %}
 <script type="text/front-matter">
   title: Why geoRxiv
   description: A Journal for the 21st Century.
   authors:
-  - Mohamed Yousif: http://adonese.github.io
-  - Mohamed Jaafar: http://wadjaafar.github.com
+      - Mohamed Yousif: http://adonese.github.io
+      - Mohamed Jaafar: http://wadjaafar.github.com
   affiliations:
-  - gndi: http://gndi-sd.com
-  - gndi: http://gndi-sd.com
+      - gndi: http://gndi-sd.com
+      - gndi: http://gndi-sd.com
 </script>
+{% endcapture %}
+
+{{ metadata }}
 
 
 <dt-article class="centered">
     <h1>Why geoRxiv</h1>
     <dt-byline></dt-byline>
-    <h2>We made geoRxiv hoping that it will help researchers exchange their ideas even better and clearer.</h2>
+    <p>We made geoRxiv hoping that it will help researchers exchange their ideas even better and clearer.</p>
     <p>There are probably too many journals out there. In my institution we have three that I know of: faculty of engineering jounral, GIS journal (from Geographic Department, and the Universtiy one). To be honest, it was just a few days since I know the existence of the Faculty of Engineering Journal. I had a publication on it once, though I thought it was a magazine not a <em>journal</em>. Also, they are too outdated, and they don't come through any reviews <dt-fn>There was an incident on 2016 when University of Khartoum decided to show all of the theses online. In less than two weeks, they have recieved more than 70 copy rights infrigment. Dr. Ahmed Abdalla told me about this incident.</dt-fn>. Sometimes, a <em>reboot</em> is necessary.</p>
 
 
@@ -77,6 +77,10 @@ xetex: true
     <p>Along the way, people tend to loose orientation. Scientific publication is meant to share knowledge and make it accessible <dt-fn>There is a nice post by Donald K. Knuth about this topic. He said, he spent much of his time reading to understand things, so that he can help people who cannot spend that much of time.</dt-fn>. Now, human knowledge are locked behind publications corporations. Students need to pay to be able to read a paper. And that is not the worst part, authors do not even get to make any revenue from their works. It is not a win-win at all. We need to stand against that. </p>
 
     <p>Feel free to contact me for any further questions on inqueries. I look forward to hearing from you soon.</p>
+    <dt-code block language="python">
+        def function(x):
+            return x ** 2
+    </dt-code>
 </dt-article>
 
 <dt-appendix>
@@ -84,6 +88,21 @@ xetex: true
     <p>This article was written by M.Y. The figures and graphs are done by M.J.</p> 
 
     <p>We would like to thank our editors for their time and effort on this project.</p>
+    <h3>Citations and Reuse</h3>
+    <p>Diagrams and text are licensed under Creative Commons Attribution CC-BY 2.0, unless noted otherwise, with the source available on GitHub. The figures that have been reused from other sources don't fall under this license and can be recognized by a note in their caption: “Figure from …”.
+
+    <p>For attribution in academic contexts, please cite this work as</p>
+        <br>
+<pre class="citation short">Yousif &amp; Jaafar, "geoRxiv: A Journal for the 21st Century", geoRxiv, 2016.</pre>
+<p>BibTeX citations</p>
+    <pre class="citation long">
+@article{mohamedgeorxiv,
+title={geoRxiv: A Journal for 21st Century},
+author={Mohamed Yousif and Mohamed Jaafar},
+year={2017},
+journal={geoRxiv},
+url={https://georxiv.github.io/journal/why-georxiv}
+}</pre>
 </dt-appendix>
 
 <script type="text/bibliography">
