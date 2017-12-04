@@ -1,7 +1,7 @@
 ---
 title: "How to use distill"
 date: 27-11-2017
-layout: distill
+layout: distillblog
 ---
 
 This is step-by-step guide line on how to use distill template. After this article, you should be quite familiar about the main features of distill template. In most of the time, you don't need to do any CSS hacks. This template is meant to abstract all of that. We got you covered. For the interactive visualization, we highly encourage you to try and learn basic [D3.js](https://www.d3js.org). D3.js indeed might seem quite overwhelming at first, however, there are tons of examples that you can easily modify on. If you cannot do that at all, fear not. We are expecting that. We _can_ help here, too. The problem is, it is just quite hard to explain to our team what do you want your visualization to be look like. If you can handle that, I think we can help you. Note that, however, we are _not_ paid to do this task. We _will_ try to help you as much as we can.

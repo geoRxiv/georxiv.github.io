@@ -1,5 +1,5 @@
 ---
-layout: distill
+layout: distillblog
 katex: true
 ---
 <script type="text/front-matter">
