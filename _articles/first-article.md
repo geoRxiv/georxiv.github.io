@@ -2,6 +2,7 @@
 layout: distillblog
 katex: true
 ---
+
 <script type="text/front-matter">
   title: Article Title
   published: Jan 10, 2017
