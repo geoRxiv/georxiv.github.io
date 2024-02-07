@@ -8,7 +8,7 @@ This is step-by-step guide line on how to use distill template. After this artic
 
 ## Philosophy
 
-We want to separate the document content from the document appearance. Pretty much like [LaTeX](https://www.latex-project.org/about). Having said that, we using something instead of LaTeX. The only difference, however, is we will be using HMTL instead of PDF, for our publications.
+We want to separate the document content from the document appearance. Pretty much like [LaTeX](https://www.latex-project.org/about). Having said that, we will be using something instead of LaTeX. The only difference, however, is we will be using HMTL instead of PDF, for our publications.
 
 We could have used LaTeX as our markup language. But that would have possessed more difficulties for both us and our authors: since we are using HTML anyway, why not stick with that?
 
