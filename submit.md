@@ -5,4 +5,6 @@ title: Submit
 ---
 
 
-# It is worth mentioning that I hate you.
+# Submit
+
+You can send us your work by email to [info@georxiv.org](mailto:info@georxiv.org?subject=Submission)
